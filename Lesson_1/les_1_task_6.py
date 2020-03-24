@@ -7,9 +7,9 @@ a, b, c = int(a), int(b), int(c)
 if a + b > c and a + c > b and c + b > a:
     if a == b == c:
         print("Треугольник равносторонний")
-    elif a != b != c:
-        print("Треугольник разносторонний")
     elif a == b or a == c or b == c:
         print("Треугольник равнобедренный")
+    else:
+        print("Треугольник разносторонний")
 else:
     print("Такой треуголник не существует")

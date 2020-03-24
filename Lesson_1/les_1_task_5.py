@@ -3,4 +3,4 @@
 n = int(input("Введите номер буквы: "))
 s = 'abcdefghijklmnopqrstuvwxyz'
 i = s[n - 1]
-print(f"Буква {i} с номером {n}")
+print(f"Буква '{i}' с номером {n}")
