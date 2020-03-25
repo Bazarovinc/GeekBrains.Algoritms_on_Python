@@ -5,7 +5,7 @@ n = int(input("Введите колличество чисел: "))
 i = int(input("Введите цифру для поиска: "))
 count = 0
 for j in range(n):
-    num = int(input("Введите число: "))
+    num = abs(int(input("Введите число: ")))
     while num != 0:
         c = num % 10
         if c == i:

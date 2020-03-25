@@ -15,24 +15,24 @@ while True:
     flag = 0
     try:
         n1 = float(input("Введите первое число: "))
-        n2 = float(input("Введите второе число: "))
         op = input("Введите операцию: ")
+        n2 = float(input("Введите второе число: "))
     except ValueError:
         print("Ошибка. Повторите ввод.")
         flag = 1
     if flag == 0:
-        if n2 == 0 or op not in "+-/*0":
+        if n2 == 0 and op == '/':
             print("Ошибка. Повторите ввод.")
+        elif op == '+':
+            print(f"Ответ: {n1 + n2}")
+        elif op == '-':
+            print(f"Ответ: {n1 - n2}")
+        elif op == '*':
+            print(f"Ответ: {n1 * n2}")
+        elif op == '/':
+            print(f"Ответ: {n1 / n2}")
+        elif op == '0':
+            print("До свидания!")
+            break
         else:
-            if op == '0':
-                print("До свидания!")
-                break
-            else:
-                if op == '+':
-                    print(f"Ответ: {n1 + n2}")
-                elif op == '-':
-                    print(f"Ответ: {n1 - n2}")
-                elif op == '*':
-                    print(f"Ответ: {n1 * n2}")
-                elif op == '/':
-                    print(f"Ответ: {n1 / n2}")
+            print("Ошибка. Повторите ввод.")
