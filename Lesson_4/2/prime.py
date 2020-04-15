@@ -1,3 +1,5 @@
+import timeit
+
 def IsPrime(n):
     d = 2
     while d * d <= n and n % d != 0:
